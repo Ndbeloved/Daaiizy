@@ -1,0 +1,36 @@
+:root{
+  --header-font: "SpaceGrotesk";
+  --xl-desk-font: "60px";
+  --lg-desk-font: "30px";
+  --sm-desk-font: "20px";
+  --xm-desk-font: "18px";
+  --xl-font: "25px";
+  --lg-font: "18px";
+  --sm-font: "16px";
+  --xm-font: "14px";
+  --pink-500: #f7d2ca;
+  --black-800: #2d2c2b;
+  --black-900: #1e1d1d;
+  --yellow-500: #f6d63f;
+}
+
+@font-face {
+  font-family: SpaceGrotesk;
+  src: url("./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: InterV;
+  src: url("./assets/fonts/Inter-VariableFont_opsz_wght.ttf");
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: InterV;
+}
+
+body{
+  position: relative;
+}

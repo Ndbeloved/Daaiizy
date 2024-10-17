@@ -1,0 +1,43 @@
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 5%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width: fit-content;
+    cursor: pointer;
+    position: relative;
+    top: 1rem;
+}
+
+nav .logo a{
+    font-size: 25px;
+    width: fit-content;
+    color: var(--pink-500);
+    padding: 0.6rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    background: var(--black-800);
+}
+
+nav .menu svg{
+    font-size: 35px;
+    color: var(--black-800);
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 700px) {
+    nav .logo{
+        top: 0;
+    }
+}

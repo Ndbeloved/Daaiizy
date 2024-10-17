@@ -1,0 +1,24 @@
+div.animated-text-cont span{
+    /* font-size: 60px; */
+    position: relative;
+    cursor: pointer;
+    font-family: var(--header-font);
+}
+
+div.animated-text-cont{
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    /* background: orangered; */
+}
+
+div.animated-text-cont div.move{
+    position: relative;
+    top: 0%;
+    transition: top .2s ease-out;
+}
+
+div.animated-text-cont:hover > div.move{
+    position: relative;
+    top: -50%;
+}

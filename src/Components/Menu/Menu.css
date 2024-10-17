@@ -1,0 +1,54 @@
+section.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: var(--black-900);
+    z-index: 101;
+    clip-path: circle(0px at 94% 1.5rem);
+    transition: clip-path .6s;
+    transition-timing-function: cubic-bezier(.99, .01, -0.01, 1);
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 5%;
+    align-items: center;
+}
+
+section.menu.open{
+    clip-path: circle(200% at 100% 100%);
+    transition: clip-path 1.3s;
+    transition-timing-function: cubic-bezier(1, -0.01, .01, .99);
+}
+
+.menu .center{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu .center .close{
+    position: relative;
+    padding: 0.8rem;
+    border-radius: 50%;
+    background: var(--black-800);
+    display: grid;
+    place-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: fit-content;
+    width: fit-content;
+}
+
+.menu .center .close svg{
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform .5s ease-in-out;
+}
+
+.menu .center .close:hover > svg{
+    transform: rotate(90deg);
+}
