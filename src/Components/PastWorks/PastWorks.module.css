@@ -1,0 +1,75 @@
+.container{
+    background: #fcf8f3;
+    position: relative;
+    padding: 3rem 5%;
+}
+
+.upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caption{
+    position: relative;
+}
+
+.caption p{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
+    text-wrap: nowrap;
+}
+
+.caption p span{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: #000;
+}
+
+.caption h1{
+    width: 300px;
+    height: auto;
+    font-size: 60px;
+}
+
+.svgContainer{
+    display: flex;
+    gap: 4rem;
+}
+
+.svgContainer svg{
+    background: var(--pink-500);
+    padding: 1.2rem;
+    font-size: 20px;
+    box-sizing: content-box;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel{
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+    overflow-x: scroll;
+    cursor: grab;
+    user-select: none;
+}
+
+.grabbing{
+    cursor: grabbing;
+}
+
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.carousel div{
+    min-width: 300px;
+    aspect-ratio: 3 / 4;
+    background: #dfdfdf;
+}

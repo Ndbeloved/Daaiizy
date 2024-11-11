@@ -221,7 +221,7 @@ section.about-section div.rol-1 div.list-item-about svg{
 
 section.socials-section{
     position: relative;
-    height: 100vh;
+    height: fit-content;
     background: #fff;
     padding: 3rem 5% 2rem 5%;
 }

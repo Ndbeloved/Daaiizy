@@ -16,6 +16,8 @@ import { FaArrowRight, FaArrowUp } from "react-icons/fa6"
 import { PiDressBold } from "react-icons/pi"
 import { IoIosArrowRoundUp } from "react-icons/io"
 import SlotCounter from "react-slot-counter"
+import PastWorks from "../../src/Components/PastWorks/PastWorks"
+import Footer from "../../src/Components/Footer/Footer"
 
 const settings = {
     dots: false,
@@ -243,6 +245,10 @@ function HomePage() {
                 </div>
             </div>
         </section>
+
+        {/* past works */}
+        <PastWorks />
+        <Footer />
         </>
     )
 }

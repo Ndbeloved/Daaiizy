@@ -1,0 +1,6 @@
+.footer{
+    position: relative;
+    padding: 3rem 5%;
+    background: var(--black-900);
+    min-height: 50vh;
+}
